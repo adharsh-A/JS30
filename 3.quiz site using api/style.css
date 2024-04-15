@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    user-select: none;
+
+    background-size: cover;
+    background-image: url("../31.api quiz/images/neom-El92hmAt91o-unsplash.jpg");
+}
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #333;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+
+    
+.app{
+    margin: auto;
+    margin: auto 20px;
+    align-self: center;
+    width: 90%;
+    max-width: 650px;
+    margin: 100px auto 0;
+    padding: 30px;
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    border-radius: 10%;
+    background-color: rgba(213, 216, 222, 0);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.app h1{
+    font-size: 25px;
+    color: #445b89;
+    font-weight: 600;
+    border-bottom: 1px solid #f6f3f3;
+    padding-bottom: 30px;
+}
+
+#question {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #445b89;
+}
+.quiz{
+    padding: 20px 90;
+}
+
+.quiz h2{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #6b96ec;
+    font-weight: 600;
+}
+#difficultyForm{
+    display: flex;
+    justify-content: center;
+   
+}
+.radio-label {
+    display: flex;
+    align-self: center;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 26px;
+margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.radio-label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+input[type="radio"]:checked + .radio-label:before {
+    background-color: #000000c5;
+}
+
+input[type="radio"]:checked + .radio-label:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+}
+
+.category-list{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content horizontally */
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 10px; /* Add some space between rows */
+}
+.button{
+    display: flex;
+    font-size: larger;
+    color: whitesmoke;
+    background-color: #758299;
+    border: none;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    padding: 21px;
+    margin: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button:hover {
+    color: #000000;
+    border: 1px solid black;  
+      box-shadow: rgb(0, 0, 77) 0px 20px 30px -10px;
+    background-color: #dab018df; /* Change background color on hover */
+    transform: scale(1.15); /* Scale the button slightly on hover */
+    cursor: pointer;
+  }
+
+  #rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 6em;
+    color: #999;
+    font-weight: 400;
+  }
+  .range {
+    width: 90%;
+    height: 15px;
+    -webkit-appearance: none;
+    background: #efc28b;
+    outline: none;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    margin-bottom: 50px;
+
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px #ffffff;
+  }
+
+.btn{
+    font-size: 22px;
+    color: rgb(53, 44, 26);
+ display: block;
+ border: none;
+ border-radius: 5px;
+ padding: 5px;
+ width: fit-content;
+ margin-bottom: 10px;
+ background-color: #ffffff2f;
+}
+.btn:hover{
+    background-color: #ffffffaa;
+cursor: pointer;
+}
+
+
+#next-btn{
+    position: relative;
+    background: #c59d39;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 1px solid black ;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    
+}
+#next-btn:hover{
+    transform: scale(1.15); /* Scale the button slightly on hover */
+
+    color: #000000;
+    border: 1px solid black;  
+      box-shadow: rgb(0, 0, 77) 0px 20px 30px -10px;
+    background-color: #dab018df; /* Change background color on hover */
+    transform: scale(1.15);
+}
+
+#save{
+    position: relative;
+    background: #c59d39;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 1px solid black ;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    
+}
+#save:hover{
+    transform: scale(1.15); /* Scale the button slightly on hover */
+
+    color: #000000;
+    border: 1px solid black;  
+      box-shadow: rgb(0, 0, 77) 0px 20px 30px -10px;
+    background-color: #dab018df; /* Change background color on hover */
+    transform: scale(1.15);}
+
+
+.correct {
+    background: #0ff33d75;
+}
+
+.incorrect {
+    color: whitesmoke;
+    background: #c500006c;
+    }
+@keyframes correctAnimation {
+    100% { opacity: 1; transform: scale(1.15); }
+}
+
+@keyframes incorrectAnimation {
+   
+    100% { opacity: 1; transform: scale(1.15);}
+}
