@@ -22,6 +22,6 @@ function createPassword(){
 
 function copyPassword(){
     passwordBox.select();
-    document.execCommand("copy");
+    document.execCommand('copy');
 }
 
