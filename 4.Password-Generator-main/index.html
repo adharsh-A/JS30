@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--External Style Sheet-->
     <link rel="stylesheet" href="./style.css">
     <!--Icon for the Website-->
 </head>
 <body>
-    <div class="container">
-        <h1>Generate a <br> <span>Random Password</span></h1>
-        <div class="display">
-            <input type="text" id="password" placeholder="Password">
-            <img src="./images/copy.png" alt="Copy - image" onclick="copyPassword()">
+    <div class="container ">
+        <h1 class="animate__animated  animate__lightSpeedInLeft" >Generate a <br> <span>Random Password</span></h1>
+        <div class="display animate__animated  animate__fadeIn">
+            <input  type="text" id="password" placeholder="Password">
+            <img class="imgtag" src="./images/copy.png" alt="Copy - image" onclick="copyPassword()">
         </div>
-        <button onclick="createPassword()"><img src="./images/generate.png" alt="Generate-image">Generate Password</button>
+        <button class="display animate__animated  animate__fadeIn" onclick="createPassword()"><img src="./images/generate.png" alt="Generate-image">Generate Password</button>
     </div>
 
     <!--JS File-->
