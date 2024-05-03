@@ -5,6 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        position: relative;
+    
+        margin: 10px;
+        background: linear-gradient(to left, #000000 , #923CB5);
+    background-size: cover;
+        bottom: 0;
+        margin: auto;
+        /* You only need one background property to set the gradient */
+    }
+    
+    .grid-container {
+            width: 50%;
+        position: absolute;
+           display: flex;
+            margin-left: 37rem;
+           flex-direction: row;
+                flex-wrap: wrap;
+    
+        /*   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        */     gap: 10px;
+                padding: 100px;
+    }
+    
+    .grid-item {
+        position: relative;
+        width: 200px;
+        max-width: 200px;
+        border: 2px solid rgb(97, 95, 95);
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s ease, background-color 0.9s ease;}
+    
+    .grid-item:hover{
+        color: #ffffff;
+        border: 2px solid rgb(244, 242, 242);
+    
+        background-color: #b72bb7;
+    }
+    
+    a {
+        font-size: larger;
+    
+        text-decoration: none;
+        color: #292727;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        font-weight: 500;
+        font-size: larger;
+        color: #1b1b1b;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .grid-container {
+        animation: fadeIn 1s ease;
+    }
+    
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 40px;
+        text-align: center;
+        color: #eeeaea;
+    }
+    @media  (max-width:500px){
+        .grid-container {
+            /*     position: relative;
+             */    display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 2rem;
+            margin-left: 7rem ;       
+            gap: 10px;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 0px;       
+     }
+            h1{
+                font-size: 2rem;
+            }
+            .grid-item{
+                min-width: 200px;
+            }
+    }
+    @media  (max-width:320px){
+    
+        .grid-container{
+            margin-left: ;
+            padding: 2px;
+        }
+        .grid-item{
+    
+            align-self: center;
+            min-width: 250px;
+        }
+    }
+    
+    </style>
 </head>
 <body>
     <h1>JavaScript Projects</h1>
