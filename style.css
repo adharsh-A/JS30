@@ -1,118 +1,124 @@
+/* Background styles */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
+  }
+
+ 
+
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-image: 
+    radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+    radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+background-position: center;
+    flex-wrap: wrap;
 }
 
-body {
-    position: relative;
-
-    margin: 10px;
-    background: linear-gradient(to left, #000000 , #923CB5);
-background-size: cover;
-    bottom: 0;
-    margin: auto;
-    /* You only need one background property to set the gradient */
+.container {
+    margin-top: 100px;
+    margin:10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.grid-container {
-        width: 50%;
-    position: absolute;
-       display: flex;
-        margin-left: 37rem;
-       flex-direction: row;
-            flex-wrap: wrap;
-
-    /*   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    */     gap: 10px;
-            padding: 100px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.grid-item {
-    position: relative;
-    width: 200px;
-    max-width: 200px;
-    border: 2px solid rgb(97, 95, 95);
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s ease, background-color 0.9s ease;}
+/* Glassmorphism card effect */
+.card {
+    min-height: 80px;
+    min-width: 250px;
+    flex: 1 1 calc(25% - 40px); /* Each card will take up 25% of the row minus the margins */
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: aliceblue;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(4, 22, 86, 0.632), -5px -5px 10px rgba(4, 22, 86, 0.632);
 
-.grid-item:hover{
-    color: #ffffff;
-    border: 2px solid rgb(244, 242, 242);
-
-    background-color: #b72bb7;
 }
 
-a {
-    font-size: larger;
-
-    text-decoration: none;
-    color: #292727;
-    transition: color 0.3s ease;
+.card h2 {
+    margin-top: 0;
 }
 
-a:hover {
-    font-weight: 500;
-    font-size: larger;
-    color: #1b1b1b;
+.button {
+    margin-top: 10px;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.grid-container {
-    animation: fadeIn 1s ease;
-}
-
-h1 {
-    margin-top: 30px;
+.card h2{
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: 600;
     margin-bottom: 10px;
-    font-size: 40px;
     text-align: center;
-    color: #eeeaea;
 }
-@media  (max-width:500px){
-    .grid-container {
-        /*     position: relative;
-         */    display: flex;
-            justify-content: center;
-            flex-direction: column;
-            margin-top: 2rem;
-        margin-left: 7rem ;       
-        gap: 10px;
-        flex-wrap: nowrap;
-        gap: 20px;
-        padding: 0px;       
- }
-        h1{
-            font-size: 2rem;
-        }
-        .grid-item{
-            min-width: 200px;
-        }
-}
-@media  (max-width:320px){
-
-    .grid-container{
-        margin-left: ;
-        padding: 2px;
-    }
-    .grid-item{
-
-        align-self: center;
-        min-width: 250px;
-    }
+.card:hover{
+    transform: rotate3d(.card);
+    transform: scale(1.05);
 }
 
+.card p{
+    padding: 5px;
+    text-align: center;
+    font-weight: 300;
+}
+/* .card button{
+    padding: 5px;
+    color: black;
+    background: whitesmoke;
+    border:0;
+    outline: 0;
+    font-size: larger;
+    border-radius: 20%;
+} */
+.button{
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+font-size: large;
+}
+.heading{
+    margin-right: 100px;
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+    height: 350px;
+}
+
+.heading h1{
+    padding-bottom: 200px;
+    font-size: 4rem;
+    text-transform: none;
+    text-shadow: 10px 10px 10px rgb(29, 1, 29);
+}
+.design{
+    padding: 20px;
+    width:800px;
+    text-align: center;
+font-family: monospace;
+    font-size: 1.5rem;
+    text-transform: none;
+    text-shadow: 50px 5px 5px rgba(177, 18, 177, 0.693);
+}

@@ -1,7 +1,7 @@
 let popUp=document.getElementById("pop-up");
 
 function openPopUp(){
-    popUp.classList.add("open-pop-up");
+    popUp.classList.add("open-pop-up ");
 }
 
 function closePopUp(){

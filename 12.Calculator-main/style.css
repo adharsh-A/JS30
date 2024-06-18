@@ -16,7 +16,7 @@
 }
 
 .calculator {
-    background: black;
+    background: rgba(69, 0, 34, 0.819);
     padding: 20px;
     border-radius: 10px;
 }
@@ -53,5 +53,5 @@ form input.equal{
 }
 
 form input.operator{
-    color: gold;
+    color: rgb(242, 255, 0);
 }

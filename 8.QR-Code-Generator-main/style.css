@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #007ea7;
+    background: #546165;
 }
 
 .container{
@@ -18,8 +18,10 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background:  #007ea7;
+    background:  #05165574;
     border-radius: 10px;
+    box-shadow: 0 1px 20px 5px #1f1f1f;
+
 }
 
 .container p{
@@ -37,6 +39,7 @@ body{
     padding: 10px;
     margin: 10px 0 20px;
     border-radius: 5px;
+
 }
 
 .container button{
@@ -46,10 +49,18 @@ body{
     color: white;
     border: 0;
     outline: 0;
-    border-radius: 5px;
+    border: 2px solid ;
+    border-radius: 25px;
     cursor: pointer;
     margin: 20px 0;
     font-weight: 500;
+}
+.container button:hover{
+background-color: aliceblue;
+color: #546165;
+border-radius: 25px;
+border: 2.5px solid black;
+box-shadow: 0 1px 5px 3px #e0e2e7;
 }
 
 #imgBox{
@@ -61,14 +72,16 @@ body{
 }
 
 #imgBox img{
+   
     width: 100%;
     padding: 10px;
 }
 
-#imgBox.show-img{
+#imgBox .show-img{
     max-height: 300px;
     margin: 10px auto;
-    border: 1px solid  white;
+    border: 1px solid  rgb(18, 69, 141);
+
 }
 
 .error{

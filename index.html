@@ -4,145 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <style>* {
-        margin: 0;
-        padding: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
-        box-sizing: border-box;
-    }
-    
-    body {
-        position: relative;
-    
-        margin: 10px;
-        background: linear-gradient(to left, #000000 , #923CB5);
-    background-size: cover;
-        bottom: 0;
-        margin: auto;
-        /* You only need one background property to set the gradient */
-    }
-    
-    .grid-container {
-            width: 50%;
-        position: absolute;
-           display: flex;
-            margin-left: 37rem;
-           flex-direction: row;
-                flex-wrap: wrap;
-    
-        /*   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        */     gap: 10px;
-                padding: 100px;
-    }
-    
-    .grid-item {
-        position: relative;
-        width: 200px;
-        max-width: 200px;
-        border: 2px solid rgb(97, 95, 95);
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 1rem;
-        border-radius: 5px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: border-color 0.3s ease, background-color 0.9s ease;}
-    
-    .grid-item:hover{
-        color: #ffffff;
-        border: 2px solid rgb(244, 242, 242);
-    
-        background-color: #b72bb7;
-    }
-    
-    a {
-        font-size: larger;
-    
-        text-decoration: none;
-        color: #292727;
-        transition: color 0.3s ease;
-    }
-    
-    a:hover {
-        font-weight: 500;
-        font-size: larger;
-        color: #1b1b1b;
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    .grid-container {
-        animation: fadeIn 1s ease;
-    }
-    
-    h1 {
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-size: 40px;
-        text-align: center;
-        color: #eeeaea;
-    }
-    @media  (max-width:500px){
-        .grid-container {
-            /*     position: relative;
-             */    display: flex;
-                justify-content: center;
-                flex-direction: column;
-                margin-top: 2rem;
-            margin-left: 7rem ;       
-            gap: 10px;
-            flex-wrap: nowrap;
-            gap: 20px;
-            padding: 0px;       
-     }
-            h1{
-                font-size: 2rem;
-            }
-            .grid-item{
-                min-width: 200px;
-            }
-    }
-    @media  (max-width:320px){
-    
-        .grid-container{
-            margin-left: ;
-            padding: 2px;
-        }
-        .grid-item{
-    
-            align-self: center;
-            min-width: 250px;
-        }
-    }
-    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/256/15644/15644327.png?ga=GA1.1.629397790.1708673400&semt=ais_hybrid" type="icon/x-image">
+
+   <!--  animate rel -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+
+ <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>My JS Portfolio</title>
+    <style>
     </style>
 </head>
 <body>
-    <h1>JavaScript Projects</h1>
-    <a href="https://adharsh-portfolio.netlify.app/" target="_blank" style="display: block; text-align: center; margin-bottom: 20px; color: rgba(137, 222, 243, 0.841);font-size: 1.5rem; text-decoration: none;">my potfolio site</a>
-    <div class="grid-container">
-        <a href="1.Weather-Site-main\index.html" target="_blank"><div class="grid-item">Weather Site</div></a>
-        <a href="2.To-do-list-main\index.html" target="_blank"><div class="grid-item">To do list</div></a>
-        <a href="3.quiz site using api\index.html" target="_blank"><div class="grid-item">Quiz Using API Site</div></a>
-        <a href="4.Password-Generator-main\index.html" target="_blank"><div class="grid-item">Password-Generator</div></a>
-        <a href="5.Notes_Site-main\index.html" target="_blank"><div class="grid-item">Notes Maker</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
-        <a href="6.Age-Calculator-main\index.html" target="_blank"><div class="grid-item">Age Calculator</div></a>
+    <div class="heading ">
+        <div class="typed">
+        <h1 class="animate__animated animate__slideInLeft">JavaScript Mini-Projects Portfolio...... </h1>
+        </div>
+        <p class="design">Welcome to my portfolio of JavaScript mini projects! Here, you’ll find a collection of diverse and interactive web applications that showcase my skills in front-end development, API integration, and user interface design. Each project is a unique solution to a common problem or an engaging tool meant to enhance everyday tasks. Explore these projects to see how I bring functionality and creativity together.</p>
+        
+        </div>
+    <div class="container">
+        <div class="row">
+            <a href="1.Weather-Site-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Weather Site</h2>
+                    <p>gives in depth weather details in a specific city on search made using API integration</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="2.To-do-list-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>To do list</h2>
+                    <p>Auto Saving Using Local Storage And Delete And New function</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="3.quiz site using api\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Quiz Using API Site</h2>
+                    <p>Categorized Technical Quiz using API integration</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="4.Password-Generator-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Password-Generator</h2>
+                    <p>Random Password Generator and Key Board copy feature</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="5.Notes_Site-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Notes Maker</h2>
+                    <p>Random Password Generator and Key Board copy feature</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="6.Age-Calculator-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Age Calculator</h2>
+                    <p>Guess The exact age with days, months, and year.</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="7.Quote-Generator-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Random Quote Generator</h2>
+                    <p>Random Quote Generator using API and post functionality to X (formerly Twitter).</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="8.QR-Code-Generator-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>QR Code Generator</h2>
+                    <p>QR code Generator for any text and URL.</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="9.Toast-Notification-Bar-main\index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Toast Notification Bar</h2>
+                    <p>On certain triggers specific types of Notification will appear for a certain time limit.</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="10.Music-Player-main/index.html" target="_blank">
+                <div class="card animate__animated animate__fadeIn">
+                    <h2>Music Player</h2>
+                    <p>With all music controls</p>
+                    <div class="button">
+                        View Project <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
+               
+                        <!-- <h1>JavaScript Projects</h1>
+    <a href="https://adharsh-portfolio.netlify.app/" target="_blank" style="display: block; text-align: center; margin-bottom: 20px; color: rgba(137, 222, 243, 0.841);font-size: 1.5rem; text-decoration: none;">my potfolio site</a>
+    <
 </body>
 </html>
+</html>-->
+
+</body>
 </html>

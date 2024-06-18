@@ -64,7 +64,7 @@ function skipBackward() {
 if (song.played && !song.paused) {
     setInterval(() => {
         progress.value = song.currentTime;
-    }, 500);
+    }, 0);
 }
 
 // Update the song's currentTime when the progress bar is changed

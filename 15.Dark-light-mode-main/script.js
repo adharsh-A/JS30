@@ -1,5 +1,5 @@
-var icon = document.getElementById("icon");
-var modeText = document.getElementById("modeText");
+let icon = document.getElementById("icon");
+let modeText = document.getElementById("modeText");
 
 icon.onclick = function() {
     document.body.classList.toggle("dark-theme");
