@@ -8,7 +8,7 @@
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: blanchedalmond;
+    background: rgba(30, 15, 104, 0.499);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .hero h1 span {
-    color: #ff2962;
+    color: #dbff4b;
 }
 
 .hero textarea {
@@ -53,7 +53,7 @@
 }
 
 .row button {
-    background: #ff2963;
+    background: #3308a8;
     color: #FFF;
     font-size: 16px;
     padding: 10px 30px;
@@ -73,7 +73,7 @@ button img {
 select {
     flex: 1;
     color: #FFF;
-    background: #403d84;
+    background: #cd4dbccb;
     height: 50px;
     padding: 0 20px;
     outline: 0;
