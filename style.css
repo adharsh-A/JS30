@@ -43,10 +43,10 @@ background-position: center;
 
 /* Glassmorphism card effect */
 .card {
-    /* min-height: 80px;
-    min-width: 250px; */
-    max-height: fit-content;
-    max-width: fit-content;
+    min-height: 80px;
+    min-width: 250px;
+   /*  max-height: fit-content;
+    max-width: fit-content; */
     flex: 1 1 calc(25% - 40px); /* Each card will take up 25% of the row minus the margins */
     cursor: pointer;
     margin: 20px;
