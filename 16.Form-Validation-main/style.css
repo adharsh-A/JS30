@@ -30,9 +30,9 @@
     width: 90%;
     max-width: 500px;
     padding: 50px 30px 20px;
-    background: #FFFFFF;
+    background: #69696983;
     border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 4px 30px rgb(9, 9, 0);
     position: relative;
 }
 
@@ -65,19 +65,25 @@
 
 .input-group input,
 .input-group textarea {
+    max-width: 150px;
+    min-width: 300px;
     flex-basis: 68%;
     background: #F2F2F2;
     border: 0;
     outline: 0;
-    padding: 10px 0;
-    border-bottom: 1px solid #999;
-    color: #333;
-    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: #db0e0e;
+    font-size: 14px;
+    height: 30px;
+}
+input-group textarea {
+    height: 100px;
 }
 
 ::placeholder {
     font-size: 14px;
-    color: #999;
+    color: #a0040492;
 }
 
 form button {
@@ -93,7 +99,10 @@ form button {
     font-size: 16px;
     font-weight: bold;
 }
-
+form button:hover{
+    background:rgb(13, 56, 99) ;
+    transform: scale(0.9);
+}
 .input-group span {
     position: absolute;
     bottom: 12px;
