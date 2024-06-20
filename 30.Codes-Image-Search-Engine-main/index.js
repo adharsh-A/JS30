@@ -30,7 +30,7 @@ async function searchImages(){
         searchResult.appendChild(imageLink);
     })
     showMoreBtn.style.display = "block";
-}
+} 
 
 searchForm.addEventListener("submit", (e) =>{
     e.preventDefault();

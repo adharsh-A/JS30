@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: whitesmoke;
+    background: rgba(57, 6, 96, 0.771);
 }
 #left,#right{
     width: 300px;
@@ -21,7 +21,7 @@
     border: 2px dashed black;
 }
 .list{
-    background: dodgerblue;
+    background: rgb(255, 30, 131);
     height: 60px;
     margin: 30px;
     color: #fff;
