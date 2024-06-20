@@ -13,7 +13,8 @@
 }  
 
 .todo-app{
-    width: 100%;
+    position: absolute;
+    width: 90%;
     max-width: 540px;
     background: #fff;
     margin: 100px auto 20px;
@@ -29,11 +30,15 @@
 }
 
 .todo-app h2 img{
+    position: relative;
+
     width: 30px;
     margin-left: 10px;
 }
 
 .row{
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,6 +49,8 @@
 }
 
 input{
+    position: relative;
+
     flex: 1;
     border: none;
     outline: none;
@@ -52,6 +59,8 @@ input{
     font-weight: 14px;
 }
 .btn-hover {
+    position: relative;
+
     width: 100px;
     font-size: 16px;
     font-weight: 600;
@@ -134,4 +143,52 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+}
+@media (max-width:475px) {
+    .todo-app{
+        position: absolute;
+        width: 90%;
+        max-width: 540px;
+        background: #cc81f5d6;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    
+    .todo-app h2{
+        color: #000000;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .todo-app h2 img{
+        position: relative;
+    
+        width: 30px;
+        margin-left: 5px;
+    }
+    
+    .row{
+        position: relative;
+    height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fafafbc8;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    
+    input{
+        position: relative;
+    
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-weight: 14px;
+    }    
 }

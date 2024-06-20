@@ -207,10 +207,5 @@ transform: scale(1.2);
         object-fit: cover;
         border-radius: 10px;
     }
-    #search-result img:hover{
-        transform: scale(0.9);
-        box-shadow: 10px 10px 5px rgba(95, 95, 95, 0.786),-10px -10px 5px rgba(95, 95, 95, 0.786);
-        
-    
-    }
+
 }

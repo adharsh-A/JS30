@@ -62,3 +62,43 @@
     bottom: 15px;
     cursor: pointer;
 }
+@media (max-width:475px) {
+    .container h1 img{
+        width: 30px;
+    }
+    
+    .container button img{
+        width: 20px;
+        margin-right: 8px;
+    }
+    
+    .container button{
+        width: 180px;
+        display: flex;
+        align-items: center;
+        background: #663399;
+        color: white;
+        font-size: 16px;
+        outline: 0;
+        border: 0;
+        border-radius: 40px;
+        padding: 15px 25px;
+        margin: 30px 0 20px;
+        cursor: pointer;
+    }
+    
+    .input-box{
+        overflow-y: scroll;
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+        min-height: 100px;
+        max-height: 100px;
+        background: #ececec;
+        color: rebeccapurple;
+        padding: 20px ;
+        margin: 20px 0;
+        outline: none;
+        border-radius: 5px;
+    }
+}
