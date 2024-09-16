@@ -2,8 +2,6 @@ let toastBox = document.getElementById("toastBox");
 let successMsg = "<i class='fa-regular fa-thumbs-up'></i> Successfully submitted";
 let errorMsg = "<i class='fa-solid fa-bug'></i> Please fix the error";
 let invalidMsg = "<i class='fa-solid fa-triangle-exclamation'></i> Invalid input, check again";
-
-function showToast(msg) {
     let toast = document.createElement("div");
     toast.classList.add("toast");
     toast.innerHTML = msg;
