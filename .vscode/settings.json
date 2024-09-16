@@ -1,4 +1,9 @@
 {
     "livePreview.defaultPreviewPath": "/18.Email-Subscription-main/index.html",
-    "editor.tabSize": 5
+    "editor.tabSize": 5,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#01360F",
+        "titleBar.activeBackground": "#014C14",
+        "titleBar.activeForeground": "#ECFFF1"
+    }
 }
